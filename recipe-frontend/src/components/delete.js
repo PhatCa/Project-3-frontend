@@ -3,9 +3,9 @@ import axios from 'axios'
 
 const Delete = (props) =>{
    const handleDelete = () => {
-      axios.delete(`http://localhost:3000/recipes/${props.currentRecipe._id}`)
+      axios.delete(`http://https://recipebackend-oe7c.onrender.com/recipes/${props.currentRecipe._id}`)
       .then(() => {
-        axios.get('http://localhost:3000/recipes').then((res) => {
+        axios.get('http://https://recipebackend-oe7c.onrender.com/recipes').then((res) => {
           props.delete(res.data)
         })
       })
