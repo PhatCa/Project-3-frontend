@@ -17,7 +17,7 @@ function AddRecipe({ update, setUpdate }) {
       recipe
     };
 
-    axios.post("http://https://recipebackend-oe7c.onrender.com/recipes", newRecipe).then(() => {
+    axios.post("https://recipebackend-oe7c.onrender.com/recipes", newRecipe).then(() => {
       setUpdate(!update);
       setPicture("");
       setTitle("");
