@@ -11,7 +11,7 @@ function App() {
 
   const callApi = (e) =>{
     try{
-      axios.get('http://https://recipebackend-oe7c.onrender.com/recipes').then((res)=>{
+      axios.get('https://recipebackend-oe7c.onrender.com/recipes').then((res)=>{
         setAllRecipe(res.data)
       })
     } catch (error){
