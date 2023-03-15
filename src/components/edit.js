@@ -6,8 +6,8 @@ const Edit = (props) => {
 
   const handleEdit = (recipe) => {
     axios
-      .put("http://https://recipebackend-oe7c.onrender.com/recipes/" + recipe._id, recipe)
-      axios.get('http://https://recipebackend-oe7c.onrender.com/recipes').then((res) => {
+      .put("https://recipebackend-oe7c.onrender.com/recipes/" + recipe._id, recipe)
+      axios.get('https://recipebackend-oe7c.onrender.com/recipes').then((res) => {
         props.setAllRecipe(res.data)
       });
   };
