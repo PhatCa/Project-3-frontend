@@ -9,6 +9,8 @@ const Edit = (props) => {
       .put("https://recipebackend-oe7c.onrender.com/recipes/" + recipe._id, recipe)
       axios.get('https://recipebackend-oe7c.onrender.com/recipes').then((res) => {
         props.setAllRecipe(res.data)
+        props.setUpdate(!props.update)
+
       });
   };
 
@@ -26,7 +28,7 @@ const Edit = (props) => {
       <summary className="editDropDwn">Edit Recipe:</summary>
     <section className="editForm">
       
-      <form name="editForm">
+      <form name="editForm" onClick={handleSubmit}>
         <label htmlFor="image">Image:</label>
         <input
           className="editImage"
@@ -55,7 +57,7 @@ const Edit = (props) => {
           value={recipe.recipe}
         />
         <br />
-        <button className="editRecipeBtn" onClick={handleSubmit}>
+        <button className="editRecipeBtn">
           Edit
         </button>
       </form>
