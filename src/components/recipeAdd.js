@@ -34,8 +34,8 @@ function AddRecipe({ update, setUpdate }) {
     <div className={`add-recipe-container ${showForm ? 'expanded' : ''}`}>
       {showForm ? (
         <form onSubmit={handleSubmit}>
-          <h2>Add a Recipe</h2>
-          <label className="image">
+          <h2 className="addTitle">Add a Recipe</h2>
+          <label className="add">
             Picture:
             <input
               className="recipeInput"
@@ -45,7 +45,7 @@ function AddRecipe({ update, setUpdate }) {
               required
             />
           </label>
-          <label className="recipeTitle">
+          <label className="add">
             Title:
             <input
               className="recipeInput"
@@ -55,7 +55,7 @@ function AddRecipe({ update, setUpdate }) {
               required
             />
           </label>
-          <label className="recipeInfo">
+          <label className="add">
             Recipe:
             <textarea
               className="recipeInput"

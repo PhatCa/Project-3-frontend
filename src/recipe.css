@@ -142,3 +142,13 @@ h4 {
   padding: 10px;
   margin-top: 10px;
 }
+
+.addTitle {
+  color: white;
+  font-size: 30px;
+}
+
+.add {
+  color: white;
+  text-align: center;
+}
